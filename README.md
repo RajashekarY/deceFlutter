@@ -1,16 +1,4 @@
 # dice_statefull
+Learning to create stateful widget in Flutter here is the simple Dice application it is purely built using flutter  I have tested it on Linux desktop fortunately it should also work on other latforms like Android, IOS, Windows as flutter is multi pltform frame work.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Project Image](project.gif)
