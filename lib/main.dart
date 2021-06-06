@@ -36,10 +36,12 @@ class _DicePageState extends State<DicePage> {
     return Center(
       child: Row(children: <Widget>[
         Expanded(
-          child: FlatButton(
+          child: TextButton(
             onPressed: () {
               setState(() {
-                leftDiceNumber = Random().nextInt(6) + 1;
+                leftDiceNumber = rollDice();
+                rightDiceNumber = rollDice();
+                // ignore: avoid_print
                 print("Left Button Pressed and is $leftDiceNumber");
               });
             },
@@ -47,10 +49,12 @@ class _DicePageState extends State<DicePage> {
           ),
         ),
         Expanded(
-          child: FlatButton(
+          child: TextButton(
               onPressed: () {
                 setState(() {
-                  rightDiceNumber = Random().nextInt(6) + 1;
+                  rightDiceNumber = rollDice();
+                  leftDiceNumber = rollDice();
+                  // ignore: avoid_print
                   print("Right Button Pressed and is $rightDiceNumber");
                 });
               },
@@ -59,4 +63,9 @@ class _DicePageState extends State<DicePage> {
       ]),
     );
   }
+}
+
+int rollDice() {
+  int diceNumber = Random().nextInt(6) + 1;
+  return diceNumber;
 }
